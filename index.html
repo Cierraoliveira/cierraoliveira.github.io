@@ -21,35 +21,31 @@
             height: 200px;
             font-family: Lora;
             font-size: 15px;
-            }​
-
-        #credit{
-            position:fixed;
-            bottom: 0%;
-            left: 0%;
-        }
-
-        #container{
-            width: 300px;
-            height: 200px;
-            position: relative;
-        }
+        }        
+        
         body {
             background-image: url('https://cierraoliveira.github.io/background3.jpg');
             background-size: cover;
             /* background-size: 1800px 1000px; */
             background-repeat: no-repeat;
-            }
+            background-attachment: fixed;
+        }
 
-            .link{
-                color: black;
-            }
+        .link{
+            color: black;
+        }
 
-            .link:hover {
-                /* font-weight:bold; */
-                color: white;
-                background-color: black;
+        .link:hover {
+            font-weight:bold;
+            color: black;
+            background-color: #fcf5c9;
+        }
+
+        @media only screen and (max-width: 600px) {
+            img {
+                width: 100%;
             }
+        }
 
     </style>
 
@@ -76,6 +72,7 @@
         </p>
         
     </div> 
+
 
 </body>
 
