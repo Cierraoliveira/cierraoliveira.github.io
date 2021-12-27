@@ -3,15 +3,24 @@
 <html>
 <head>
     <title>Cierra Oliveira</title>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
     <style>
+        #name{
+            position: relative;
+            top: 120px;
+            left: 80px;
+            font-family: Lora;
+            font-style: bold;
+            font-size: 30px;
+        }
         #bio {
             position: relative;
-            top: 50%;
-            left: 50%;
-            margin-top: 150px;
-            margin-left: -150px; 
+            top: 140px;
+            left: 80px;
             width: 300px;
             height: 200px;
+            font-family: Lora;
+            font-size: 15px;
             }​
 
         #credit{
@@ -27,8 +36,19 @@
         }
         body {
             background-image: url('https://cierraoliveira.github.io/background3.jpg');
-            background-size: 1800px 1000px;
+            background-size: cover;
+            /* background-size: 1800px 1000px; */
             background-repeat: no-repeat;
+            }
+
+            .link{
+                color: black;
+            }
+
+            .link:hover {
+                /* font-weight:bold; */
+                color: white;
+                background-color: black;
             }
 
     </style>
@@ -36,30 +56,27 @@
 </head>
 
 <body>
-    <strong>Cierra Oliveira </strong>
+    <div id=name>
+        <strong>Cierra Oliveira </strong>
+    </div>
 
     <!-- create whitespace in the page, like a canvas-->
     <div id=bio >
 
-        <p style="font-size:120%;" >Cierra Oliveira is a senior at Clemson University 
-            where she studies Computer Science and Political Science.
+        <p style="font-size:120%;" >A senior at Clemson University 
+            studying Computer Science and Political Science.
             She has an academic foundation in computing and is interested
             in the intesections of technology, data, policy, and justice.
         </p>
         <p style="font-size:120%;">
             Write her an
-            <a href="mailto:cierraoliveira@gmail.com" target="_blank" style="color:black">email</a>
+            <a href="mailto:cierraoliveira@gmail.com" class="link" target="_blank">email</a>
             or find her on 
-            <a href="https://www.linkedin.com/in/cierra-oliveira-5a4552171" target="_blank" style="color:black">linkedin</a>.
+            <a href="https://www.linkedin.com/in/cierra-oliveira-5a4552171" class="link" target="_blank">linkedin</a>.
         </p>
         
     </div> 
 
-    <div id="container">
-        <div id="credit">
-            <p></p>
-        </div>
-    </div>
 </body>
 
 </html>
